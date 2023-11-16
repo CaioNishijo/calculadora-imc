@@ -8,6 +8,7 @@ const returnBtn = document.querySelector("#return-btn")
 const resultP = document.querySelector("#result-value")
 const classification = document.querySelector("#classification")
 const clearBtn = document.querySelector("#clear")
+const imcTable = document.querySelector("#imc-table")
 
 // Function
 function toggleElements(){
@@ -33,8 +34,8 @@ function showImc(result){
     } else if(result > 40){
         classification.innerText = "Classificação: Obesidade grau III"
     } else{
-        resultP.innerText = ""
-        classification.innerText = "Preencha os campos de forma adequada"
+        resultP.innerText = "Preencha os campos de maneira adequada"
+        classification.innerText = "Classificação: ??"
     }
 }
 

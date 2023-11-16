@@ -69,6 +69,18 @@ body{
     text-align: center;
     color: var(--tertiary);
 }
+#result table{
+    margin: 0 auto;
+    text-align: left;
+}
+#result th, td{
+    font-size: .8rem;
+    padding: 10px 20px;
+    border: 1px solid var(--tertiary);
+}
 .hide{
     display: none;
+}
+#result-value, #classification{
+    font-size: 1.3rem;
 }
