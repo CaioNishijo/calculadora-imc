@@ -40,7 +40,7 @@ body{
     font-size: 1.5rem;
     font-weight: bold;
 }
-#calc-form button{
+#calc-form button, #form-wrapper button, #result button{
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--tertiary);
@@ -50,8 +50,11 @@ body{
     padding: 5px 15px;
     border: 2px solid var(--secondary);
     cursor: pointer;
+    width: 40%;
+    margin: 10px;
+    width: 85%;
 }
-#calc-form button:hover{
+#calc-form button:hover, #form-wrapper button:hover, #result button:hover{
     background-color: var(--quaternary);
     border: 2px solid white;
 }
@@ -65,21 +68,6 @@ body{
     background-color: var(--primary);
     text-align: center;
     color: var(--tertiary);
-}
-#result button{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: var(--tertiary);
-    border: none;
-    border-radius: 10px;
-    background-color: var(--secondary);
-    padding: 5px 15px;
-    border: 2px solid var(--secondary);
-    cursor: pointer;
-}
-#result button:hover{
-    background-color: var(--quaternary);
-    border: 2px solid white;
 }
 .hide{
     display: none;

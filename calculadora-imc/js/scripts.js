@@ -7,6 +7,7 @@ const heightInput = document.querySelector("#height")
 const returnBtn = document.querySelector("#return-btn")
 const resultP = document.querySelector("#result-value")
 const classification = document.querySelector("#classification")
+const clearBtn = document.querySelector("#clear")
 
 // Function
 function toggleElements(){
@@ -29,8 +30,11 @@ function showImc(result){
         classification.innerText = "Classificação: Obesidade grau I"
     } else if(result >= 35 && result <= 40){
         classification.innerText = "Classificação: Obesidade grau II"
-    } else{
+    } else if(result > 40){
         classification.innerText = "Classificação: Obesidade grau III"
+    } else{
+        resultP.innerText = ""
+        classification.innerText = "Preencha os campos de forma adequada"
     }
 }
 
@@ -53,4 +57,9 @@ calcForm.addEventListener("submit", (e) => {
 
 returnBtn.addEventListener("click", () => {
     toggleElements()
+})
+
+clearBtn.addEventListener("click", () => {
+    weightInput.value = ""
+    heightInput.value = ""
 })
